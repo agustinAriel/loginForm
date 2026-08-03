@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <section class="login">
+    <div class="forms">   
+        <div class="loginContainer">
+            <img src="a.png" alt="">
+            <div class="option">
+                <!-- Agregamos id y la clase active al primero por defecto -->
+                <button type="button" id="btn-signin" class="active">Sign In</button>
+                <button type="button" id="btn-signup">Sign Up</button>
+            </div>
+        </div>
+
+        <form action="">    
+            <!-- BLOQUE 1: Campos para Sign In -->
+            <div id="signin-fields" class="singUp active">
+                <label for="mail-in">Email</label>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="mail" id="mail-in" placeholder="you@example.com">
+                </div>
+
+                <label for="password-in">Password</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password-in" placeholder="••••••••">
+                </div>
+            </div>
+
+            <!-- BLOQUE 2: Campos para Sign Up -->
+            <div id="signup-fields" class="singUp">
+                <label for="name-up">Name</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" id="name-up" placeholder="Your Name">
+                </div>
+                
+                <label for="mail-up">Email</label>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="mail" id="mail-up" placeholder="you@example.com">
+                </div>
+
+                <label for="password-up">Password</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password-up" placeholder="••••••••">
+                </div>
+            </div>
+
+            <!-- Botón principal (cambiaremos su texto con JS) -->
+            <button type="submit" id="btn-submit" class="btnSing">Sign In</button>
+
+            <!-- Lo demás se mantiene intacto abajo -->
+            <div class="connet">
+                <label for="continueWith">or continue with</label>
+                <button type="button" class="google"><img src="google-color-svgrepo-com.svg" alt=""> Continue with Google</button>
+                <button type="button" class="apple"><img src="apple-svgrepo-com.svg" alt=""> Continue with Apple</button>
+            </div>
+            
+            <div class="forgot">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
