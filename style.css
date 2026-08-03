@@ -13,7 +13,6 @@ body{
     align-items: center;
 }
 .login{
-    border:2px solid #000;
     background-image: url('fondo.webp');
     background-size: cover;
     width: 100%;
@@ -28,7 +27,8 @@ body{
     border-radius: 10px;
     border: 1px solid #ffffff42;
     width: 70%;
-    height: 80vh;
+    height: auto;
+    max-height: 90vh;
     overflow:scroll;
 }
 
@@ -136,8 +136,9 @@ body{
     align-items: center;
     background: transparent;
     border: 2px solid #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #fff;
+    cursor: pointer;
 }
 .connet .google img,
 .connet .apple img{
@@ -179,7 +180,7 @@ body{
 @media (min-width: 1024px) {
     .login .forms {
         width: 30%;
-        height: auto; 
+        height: 80vh; 
         padding: 20px; 
     }
 }
